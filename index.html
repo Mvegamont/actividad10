@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://campus.talentotechcaribe.co/pluginfile.php/58918/mod_folder/content/0/concate.html -->
+<html lang="es">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actividad 10</title>
+    <link rel="stylesheet" href="/Styles/Style_1.css">
+    <header>
+        <h1>Actividad 10</h1>
+        <h2>Sintaxis básica y Tipos de Datos, Variables y Operadores</h2>
+    </header>
+
+</head>
+
+<body>
+    <hr>
+    <div class="Variables_tipo">
+        <script type="text/javascript">
+            // Declaración de variables
+            let nombre, edad;
+            nombre = prompt('INGRESE SU NOMBRE...');
+            edad = prompt('INGRESE SU EDAD...');
+            let nombre1 = nombre;  // String
+            let edad1 = edad;        // Number
+            let esEstudiante = false; // Boolean
+
+            console.log("Nombre: ", nombre1);
+            console.log("Edad: ", edad1);
+            document.write("Nombre: ", nombre1, "<br>");
+            document.write("Edad: ", edad1, "<br>");
+
+            if (edad1 > 18) {
+                esEstudiante = true;
+                console.log("Es estudiante:", esEstudiante);
+                //imprimie en el documento
+                document.write("Es estudiante: ", esEstudiante);
+            }else{
+                console.log("Es estudiante:", esEstudiante);
+                //imprimie en el documento
+                document.write("Es estudiante: ", esEstudiante);
+            }
+        </script>
+    </div>
+    <hr>
+    <div class="OperacionesMat">
+        <script type="text/javascript">
+            let a = 10;
+            let b = 5;
+
+            let suma = a + b;
+            let resta = a - b;
+            let multiplicacion = a * b;
+            let division = a / b;
+
+            console.log("Suma:", suma);
+            console.log("Resta:", resta);
+            console.log("Multiplicación:", multiplicacion);
+            console.log("División:", division);
+
+            document.write("Suma: ", suma, "<br>");
+            document.write("Resta: ", resta, "<br>");
+            document.write("Multiplicación: ", multiplicacion, "<br>");
+            document.write("División: ", division, "<br>");
+
+        </script>
+    </div>
+    <hr>
+    <div class="Concatenar">
+        <script type="text/javascript">
+            // Concatenación de Strings y Template Literals**
+            let Equipo = "Madrid";
+            let familiar = "Tío";
+            let saludo = "Hala " + Equipo + " " + familiar + "!";
+            let saludoConTemplate = `Hala ${Equipo} ${familiar}!`;
+
+            document.write(saludo, "<br>");
+            document.write(saludoConTemplate);
+
+            console.log(saludo, "<br>");
+            console.log(saludoConTemplate);
+        </script>
+    </div>
+    <hr>
+    <div class="Comparadores">
+        <script type="text/javascript">
+            let x = 7;
+            let y = 10;
+
+            document.write("x es igual a y: ", x == y, "<br>");
+            document.write("x es diferente de y: ", x != y, "<br>");
+            document.write("x es mayor que y: ", x > y, "<br>");
+            document.write("x es menor o igual que y: ", x <= y, "<br>");
+
+            console.log("x es igual a y:", x == y);
+            console.log("x es diferente de y:", x != y);
+            console.log("x es mayor que y:", x > y);
+            console.log("x es menor o igual que y:", x <= y);
+
+        </script>
+    </div>
+    <hr>
+    <div class="Op_logicos">
+        <script type="text/javascript">
+            //Operadores Lógicos**
+            let esAdulto = true;
+            let tienePermiso = false;
+
+            let puedeEntrar = esAdulto && tienePermiso;
+            let puedeSalir = esAdulto || tienePermiso;
+            document.write("¿Puede entrar? ", puedeEntrar,"<br>");
+            document.write("¿Puede salir? ", puedeSalir,"<br>");
+            console.log("¿Puede entrar?", puedeEntrar,"<br>");
+            console.log("¿Puede salir?", puedeSalir,"<br>");
+
+        </script>
+    </div>
+    <br>
+    <footer>TalentoTech - Etrainign 2025</footer>
+
+</body>
+
+</html>
